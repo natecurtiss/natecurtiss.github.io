@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Nate Curtiss</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="jquery-3.6.4.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <div id="everything">
+    <div class="form">
         <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1_dl28u3cypBwSW90xHda2qIKvHshhE2TfZwJMhqpiLs/formResponse?" target="hidden_iframe" onsubmit=submitted()>
-            Email address:<br>
-            <label for="entry.38295861"></label><input type="text" name="entry.38295861" id="entry.38295861"><br>
+            Email address:
+            <label for="entry.38295861"></label><input type="text" name="entry.38295861" id="entry.38295861">
             <input type="submit" value="Submit">
         </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(done) {}"></iframe>
