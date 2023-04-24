@@ -1,11 +1,12 @@
 body {
     font-family: 'Roboto Slab', serif;
     background-color: black;
+}
+
+#content {
     color: white;
-    margin: 0;
-    position: absolute;
-    top: 32%;
-    left: 22%;
+    position: relative;
+    transform: translateY(125%);
 }
 
 h1 {
@@ -54,5 +55,16 @@ input {
     max-width: 100px;
     min-height: 60px;
     max-height: 60px;
+}
+
+#i3 {
+    margin: 0;
+    position: relative;
+    transform: translateY(660%);
+}
+
+#pfp {
+    position: absolute;
+    transform: translateX(10%) translateY(-120%);
 }
 

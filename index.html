@@ -7,27 +7,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="icon" type="image/x-icon" href="n8wealth.png">
     <script src="jquery-3.6.4.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 id="i1" class="fade-out" data-aos="fade-in" data-aos-delay="0">Join my email list.</h1><br>
-    <h2 id="i2" class="fade-out" data-aos="fade-in" data-aos-delay="100">Get free stuff to help you become the best YouTuber, editor, scriptwriter, thumbnail designer....</h2>
-    <form class="light" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1_dl28u3cypBwSW90xHda2qIKvHshhE2TfZwJMhqpiLs/formResponse?" target="hidden_iframe" onsubmit=submitted()>
-        <div class="fade-out" id="email-entry" data-aos="fade-in" data-aos-delay="200">
-            <label for="entry.38295861"></label><input type="text" placeholder="Email" name="entry.38295861" id="entry.38295861">
-            <label for="entry.881603344"></label><input type="text" placeholder="Name" name="entry.881603344" id="entry.881603344">
-            <input id="submit" type="submit" value="Submit">
-        </div>
-    </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(done) {}"></iframe>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init({
-        once: false,
-        mirror: true,
-        anchorPlacement: 'top-bottom',
-        offset: 0,
-        duration: 800});</script>
+    <div id="content">
+        <h1 id="i1" class="fade-out">Join my email list.</h1><br>
+        <h2 id="i2" class="fade-out">Get free stuff to help you become the best YouTuber, editor, scriptwriter, thumbnail designer....</h2>
+        <form class="light" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1_dl28u3cypBwSW90xHda2qIKvHshhE2TfZwJMhqpiLs/formResponse?" target="hidden_iframe" onsubmit=submitted()>
+            <div class="fade-out" id="email-entry">
+                <label for="entry.38295861"></label><input type="text" placeholder="Email" name="entry.38295861" id="entry.38295861">
+                <label for="entry.881603344"></label><input type="text" placeholder="Name" name="entry.881603344" id="entry.881603344">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(done) {}"></iframe>
+        <br><h1 id="i3" class="fade-out">Thank you!</h1>
+    </div>
+    <img src="n8wealth.jpeg" alt="n8wealth" width="200px" height="200px" id="pfp"/>
+    <script>
+        $(document.getElementById("i3")).fadeOut(0);
+        $(document.getElementById("i1")).fadeOut(0);
+        $(document.getElementById("i2")).fadeOut(0);
+        $(document.getElementById("email-entry")).fadeOut(0);
+        $(document.getElementById("i1")).fadeIn(500);
+        $(document.getElementById("i2")).fadeIn(500);
+        $(document.getElementById("email-entry")).fadeIn(500);
+    </script>
 </body>
 </html>
