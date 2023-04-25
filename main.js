@@ -12,6 +12,7 @@ function submitted() {
         done = true;
         $(document.getElementById("i1")).fadeOut(500);
         $(document.getElementById("i2")).fadeOut(500);
+        $(document.getElementById("pfp")).fadeOut(500);
         $(document.getElementById("email-entry")).fadeOut(500);
         $(document.getElementById("i3")).delay(500).fadeIn(500);
     }
