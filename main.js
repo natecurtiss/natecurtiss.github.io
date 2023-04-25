@@ -2,6 +2,7 @@ let done = false;
 
 function submitted() {
     if (done) return;
+    done = true;
     const fadeSelectors = ["#i1", "#i2", "#email-entry"];
     for (const selector of fadeSelectors) {
         $(selector).fadeOut(500);
